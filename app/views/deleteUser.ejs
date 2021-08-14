@@ -1,0 +1,32 @@
+<html>
+
+<body>
+
+	<form method="post" onsubmit="setAction();">
+
+		<h1> User ID:</h1>
+		<input type="text" id="userid"  name="userid">
+		<input type ="submit" value="DELETE USER">
+
+
+	</form>
+
+</body>
+
+	<script>
+
+		
+	
+		 const setAction=()=>{
+			
+			var userid = document.getElementById("userid").value;
+
+
+			document.getElementsByTagName("form")[0].setAttribute("action","deleteUser/"+userid);
+			
+
+
+	};
+
+	</script>
+</html>

@@ -1,0 +1,42 @@
+<html>
+
+
+
+
+<body>
+
+	<form method="post" onsubmit="setAction();">	
+
+
+		<h1>Id:</h1>
+		<input type="text" id="userid" name="userid">
+		<h1>Name:</h1>
+		<input type="text" name="username">
+		<h1>Password:</h1>
+		<input type="text" name="password">
+
+		<input type="submit" value="UPDATE">
+
+	</form>
+</body>
+
+
+<script>
+
+	setAction=()=>{
+
+	
+	alert("Updated!");	
+
+        var userid = document.getElementById("userid").value;
+	
+	      document.getElementsByTagName("form")[0].setAttribute("action","updateUser/" + userid);
+
+	      
+	
+
+}
+
+</script>
+
+</html>
