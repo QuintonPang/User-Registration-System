@@ -30,7 +30,7 @@
 		</div>
 
 		
-	<div class="text-center " id="menu">
+	<div class="text-center " style="opacity:0" id="menu">
 
 		
 
@@ -93,7 +93,28 @@
 		//	$("#menu").hide();			
 		//	  $("#menu").fadeIn();
 			
-			  //$("#menu").fadeIn();
+		//	 $("#menu").hide();
+
+			setTimeout(function(){
+
+					$("#menu").css({"opacity":"0.5"});
+
+		
+
+
+						
+
+				}, 250);
+
+			setTimeout(function(){
+
+					$("#menu").css({"opacity":"1"});
+
+
+
+				},750);
+
+
 			
 			 // $("#menu").fadeIn("slow");
 			
